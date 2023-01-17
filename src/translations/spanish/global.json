@@ -1,0 +1,56 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Acerca",
+        "portfolio": "Portfolio",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "banner": {
+        "greeting": "¡ Hola !",
+        "name": "Soy Guillermo Cruz",
+        "profession": "Full stack developer"
+    },
+    "about": {
+        "aboutMe": "Acerca de mí",
+        "who": "Quien soy :",
+        "description": "Un admirador de la tecnología y Desarrollador Web.",
+        "description2": "Me encuentro ubicado en Santiago del Estero, Argentina. Tengo una gran pasión por crear sitios y aplicaciones web dinámicas y fáciles de usar. Cuento con habilidades de resolución de problemas y atención al detalle, capaz de solucionar y depurar problemas complejos, asegurando que los proyectos se entreguen a tiempo y con la máxima calidad. Soy un jugador de equipo y disfruto colaborar con otros para encontrar soluciones creativas a los desafíos.",
+        "download": "Descargar CV",
+        "skills": "Mis habilidades :"
+    },
+    "portfolio": {
+        "title": "Algunos de mis proyectos más destacados hasta el momento.",
+        "website": "Sitio Web",
+        "repository": "Repositorio"
+    },
+    "services": {
+        "title": "Servicios",
+        "description": "Estos son los servicios que ofrezco.",
+        "mobile-title": "Totalmente Responsivo",
+        "mobile": "Su sitio se mostrará correctamente en cualquier dispositivo, incluido computadoras de escritorio, tabletas y teléfonos móviles.",
+        "design-title": "Diseño Creativo",
+        "design": "Un buen y atractivo diseño web lo ayuda a mantener sus potenciales clientes en su sitio, que es la cara digital de su negocio.",
+        "develop-title": "Desarrollo",
+        "develop": "Sitios de fácil uso, con una interfaz intuitiva, y también dinámicos. Esto hará crecer las visitas y, a su vez, su negocio.",
+        "ecommerce-title": "Tienda Online",
+        "ecommerce": "Puedo crear tiendas online totalmente funcionales donde el usuario pueda realizar transacciones.",
+        "performance-title": "Rendimiento",
+        "performance": "Un sitio web rápido y de buen funcionamiento es crucial. Los sitios de alto rendimiento atraen y retienen a los usuarios.",
+        "seo": "Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales."
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Siéntete libre de comunicarte conmigo y conversar sobre algún trabajo freelance, o en empresa, o simplemente..¡charlar! 😄",
+        "email": "Envíame un correo",
+        "linkedin": "Contáctame por LinkedIn",
+        "github": "Sigueme en GitHub",
+        "name": "Nombre",
+        "emailInput": "Correo",
+        "message": "Mensaje",
+        "send": "Enviar",
+        "sent": "Enviado",
+        "gratitude": "Muchas gracias, pronto me comunicaré contigo",
+        "arrow": "Ir hacia arriba"
+    }
+}

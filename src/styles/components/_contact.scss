@@ -1,0 +1,287 @@
+/* Contact */
+
+.contact_icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 4rem;
+    transition: all 1.3s;
+
+    &:hover a {
+        transform: scale(1.2);
+        color: $primary;
+    }
+
+    a {
+        color: $grey-light;
+        transition: all 0.6s;
+    }
+
+    span {
+        font-size: 1.1rem;
+        font-family: "Poppins", sans-serif;
+        color: $white;
+        text-align: center;
+    }
+}
+
+.form_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    .arrow_up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 5rem;
+        top: 15.62rem;
+        color: $primary;
+        font-size: 3.5rem;
+
+        span {
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-family: 'Raleway', sans-serif;
+            color: $white;
+        }
+    }
+
+    .form {
+        width: 31.25rem;
+        height: 28.12rem;
+        padding: 50px;
+        border-radius: 10px;
+        border: 3px solid $grey-light;
+
+        div {
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            span {
+                right: 4.37rem;
+                font-size: 1.25rem;
+                position: absolute;
+                top: 39%;
+                pointer-events: none;
+                color: $grey-light;
+                transition: 0.3s;
+                translate: 0 -50%;
+                padding: 4px 8px;
+            }
+
+            input,
+            textarea {
+                height: 3.5rem;
+                width: 18.12rem;
+                margin-bottom: 20px;
+                padding-left: 16px;
+                border: 2px solid $grey-light;
+                border-radius: 8px;
+                outline: none;
+                background: $dark;
+                color: $white;
+                font-size: 1rem;
+
+                &:focus {
+                    border-color: $primary;
+                }
+            }
+
+            textarea {
+                height: 8.12rem;
+                padding: 16px 0 0 16px;
+            }
+
+            label {
+                position: absolute;
+                top: 40%;
+                pointer-events: none;
+                color: $grey-light;
+                transition: 0.3s;
+                left: 4.37rem;
+                translate: 0 -50%;
+                padding: 4px 8px;
+                font-family: "Poppins", sans-serif;
+                border-radius: 10px;
+            }
+
+            .text_label {
+                top: 20%;
+            }
+        }
+
+        #submit {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 9.37rem;
+            height: 2.8rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            color: $white;
+            background-color: $secondary;
+            border: none;
+            border-radius: 8px;
+            padding-left: 0;
+            cursor: pointer;
+
+            &:hover {
+                color: $secondary;
+                background-color: $white;
+            }
+        }
+
+        #submitted {
+            @extend #submit;
+            background-color: green;
+
+            &:hover {
+                color: green;
+                background-color: $white;
+            }
+        }
+
+        .message_sent {
+            color: $white;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+    }
+}
+
+.form div> :is(input:focus, textarea:focus, .has-value)~label {
+    background: $dark;
+    color: $white;
+    translate: 0 -46px;
+}
+
+.form div> :is(input:focus, textarea:focus, .has-value)~span {
+    color: $primary;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .form_container .arrow_up {
+        right: 1.25rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .form_container .arrow_up {
+        right: -4.37rem;
+        top: 15.62rem;
+        font-size: 2.5rem;
+
+        span {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 795px) {
+    .form_container .arrow_up {
+        right: 0.313rem;
+
+        span {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .contact_icons {
+        gap: 0.31rem;
+        font-size: 3.5rem;
+
+        a {
+            color: $primary;
+        }
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .form_container {
+        flex-direction: column-reverse;
+        width: 100%;
+    
+        .arrow_up {
+            position: initial;
+            margin-top: 1.25rem;
+            
+            span {
+                font-size: 1.3rem;
+            }
+        }
+
+        .form {
+            width: auto;
+            height: 34.37rem;
+            padding: 60px;
+
+            div {
+                span {
+                    right: 0.93rem;
+                    top: 35%;
+                }
+
+                input,
+                textarea {
+                width: 31.25rem;
+                margin-bottom: 1.87rem;
+                }
+
+                textarea {
+                    height: 10.62rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                label {
+                    top: 35%;
+                    left: 0.93rem;
+                }
+            }
+        }
+
+        div:nth-child(3) label {
+            top: 15%!important;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .contact_icons {
+        gap: 0.313rem;
+        font-size: 3rem;
+
+        span {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .form_container .form div {
+        span {
+            right: 1px;
+        }
+
+        label {
+            left: 1px;
+        }
+    }
+
+    .form_container div:nth-child(3) label {
+        left: 1.25rem!important;
+    }
+}
+

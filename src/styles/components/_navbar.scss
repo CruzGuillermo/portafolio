@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $dark;
+    height: 100vh;
+}
+
+/* Navbar */
+
+header {
+    width: 100%;
+    height: 3.75rem;
+
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 1;
+    }
+}
+
+.navbar_scroll {
+    background-color: $white;
+    transition: 0.6s;
+    z-index: 2;
+
+    .navbar_list li span {
+        color: $dark!important;
+    }
+
+    .hamburger_menu {
+        color: $dark;
+    }
+}
+
+.navbar_logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1.87rem;
+    padding-left: 6rem;
+    margin-top: 0.18rem;
+    margin-bottom: 0.18rem;
+
+    .logo_container {
+        width: auto;
+        height: auto;
+
+        .navbar_logo {
+            width: 15.62rem;
+            height: 6rem;
+            object-fit: contain;
+        }
+    }
+    
+    .desktop_flags img {
+        height: 2.18rem;
+        width: 2.18rem;
+        object-fit: scale-down;
+        filter: grayscale(70%);
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.navbar_list-container {
+    padding-right: 6rem;
+
+    .navbar_list {
+        li {
+            padding: 12px;
+    
+            span {
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: $white;
+                cursor: pointer;
+    
+                &:after {
+                    content: "";
+                    height: 0.12rem;
+                    width: 0;
+                    background-color: $primary;
+                    display: block;
+                    transition: all 300ms;
+                }
+    
+                &:hover {
+                    color: $primary;
+    
+                    &:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .navbar_active span {
+            color: $primary!important;
+        }
+    }
+}
+
+.hamburger_menu {
+    color: $white;
+    font-size: 2rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 1070px) {
+    .navbar_list-container {
+        width: auto;
+        display: flex;
+    }
+}
+
+@media (max-width: 1070px) {
+    .navbar_list-container {
+        width: 100%;
+        background-color: $white;
+        border-radius: 6px;
+        margin: 0.37rem 2rem 0 2rem;
+
+        .navbar_list {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-left: 6rem;
+            
+            li {
+                padding: 4px;
+    
+                span {
+                    color: $dark;
+                }
+            }
+        }
+    }
+    
+    nav {
+        z-index: 3!important;
+    }
+
+    .hamburger_menu-container {
+        display: block;
+    }
+
+    .desktop_flags {
+        display: none;
+    }
+
+    .mobile_flags {
+        display: flex;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .navbar_logo-container {
+        width: 15.62rem;
+        display: flex;
+        padding-left: 2rem;
+        padding-right: 4rem;
+
+        .navbar_logo {
+            width: 12.75rem;
+            height: 8.62rem;
+        }
+    }
+
+    .hamburger_menu-container {
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar_logo-container {
+        width: 10.62rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar_logo-container {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 318px) {
+    .navbar_logo-container {
+        width: 7.5rem;
+        padding-left: 1rem;
+    }
+
+    .hamburger_menu-container {
+        padding-right: 1rem;
+
+        .hamburger_menu {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media (max-width: 240px) {
+    .navbar_logo-container {
+        width: 7rem;
+        padding-left: 1rem;
+    }
+}
+

@@ -1,0 +1,169 @@
+/* About */
+
+.about_title {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        color: $white;
+        font-size: 2.5rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+
+    :after {
+        content: "";
+        display: block;
+        width: 9.37rem;
+        height: 0.31rem;
+        background-color: $primary;
+        margin: 10px auto 40px;
+    }
+}
+
+.about_description {
+    padding: 20px;
+    line-height: 40px;
+
+    h3 {
+        color: $white;
+        font-size: 1.3rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        color: #e8f1f5; 
+        font-size: 1.1rem;
+        font-family: 'Raleway', sans-serif;
+        line-height: 40px;
+    }
+
+    .description {
+        color: $primary;
+        font-size: 1.5rem;
+        font-family: 'Secular One', sans-serif;
+        font-weight: 700;
+    }
+
+    div {
+        margin-top: 10px;
+
+        button {
+            color: $white;
+            background-color: $secondary;
+            font-size: 1.3rem;
+            border: none;
+            padding: 3px 20px 3px 20px;
+            transition: 0.6s;
+            
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.62rem;
+            }
+
+            span {
+                font-family: 'Raleway', sans-serif;;
+                font-weight: 300;
+            }
+
+            &:hover {
+                background-color: $white;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.about_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+    padding: 20px;
+
+    .skills_title {
+        grid-column-start: span 4;
+        color: $white;
+        font-size: 1.3rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+    }
+
+    .skill_item {
+        background-color: rgb(53, 50, 50);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: 3.12rem;
+        color: $white;
+        transition: 0.3s;
+        
+        span {
+            margin-top: 1.25rem;
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+    }
+    
+    .skill_item:hover {
+        color: $primary;
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .mobile_padding {
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about_title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about_skills {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.62rem;
+
+        .skills_title {
+            grid-column-start: span 2;
+        }
+
+        .skill_item {
+            font-size: 2.5rem;
+            padding: 25px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .mobile_padding {
+        width: 100%;
+        
+        .about_skills {
+            width: auto;
+            gap: 0.12rem;
+        }
+    }
+    
+}
+
+@media (max-width: 350px) {
+    .about_skills {
+        grid-template-columns: 1fr;
+        gap: 0.37rem!important;
+
+        .skills_title {
+            grid-column-start: span 1;
+        }
+    }
+}
