@@ -3,6 +3,7 @@ import { faLinkedin, faGithub, } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 import Typed from 'react-typed';
+import foto from "../assets/foto.jpg";
 
 const Banner = () => {
 
@@ -17,7 +18,7 @@ const Banner = () => {
                         <div className="banner_image">
 
                             <div className="card_face card_face--front">
-                                <img src="" alt="Foto personal" />
+                                <img src={foto} alt="Foto personal" />
                             </div>
 
                             <div className="card_face card_face--back">
