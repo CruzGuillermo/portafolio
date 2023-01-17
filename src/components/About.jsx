@@ -1,16 +1,15 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import pdf from "../assets/cv.pdf"
+import pdf from "../assets/GuillermoCruzCv.pdf"
 import ScrollReveal from 'scrollreveal';
 import bootstrap from "../assets/icon/bootstrap.png";
 import css from "../assets/icon/css3.png";
 import express from "../assets/icon/express.png";
 import html from "../assets/icon/html.png";
 import javascript from "../assets/icon/javascript.png";
-import less from "../assets/icon/less.png";
 import node from "../assets/icon/node-js.png";
 import postgres from "../assets/icon/postgresql.png";
 import react from "../assets/icon/react.png";
