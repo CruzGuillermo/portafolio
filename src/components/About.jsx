@@ -18,6 +18,7 @@ import redux from "../assets/icon/redux.png";
 import sequelize from "../assets/icon/sequelize.png";
 import tailwind from "../assets/icon/tailwind-css.png";
 
+
 const About = () => {
     const [t] = useTranslation("global");
 

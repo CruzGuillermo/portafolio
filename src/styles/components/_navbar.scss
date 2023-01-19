@@ -67,13 +67,12 @@ header {
     .desktop_flags img {
         height: 2.18rem;
         width: 2.18rem;
-        object-fit: scale-down;
-        filter: grayscale(70%);
         cursor: pointer;
         transition: 0.4s;
 
         &:hover {
-            filter: grayscale(0);
+            height: 2.50rem;
+            width: 2.50rem;
         }
     }
 }
@@ -119,6 +118,7 @@ header {
 .hamburger_menu {
     color: $white;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 /* Media Queries */
@@ -167,6 +167,7 @@ header {
 
     .mobile_flags {
         display: flex;
+        cursor: pointer;
     }
     
 }
