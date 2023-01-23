@@ -67,14 +67,12 @@ header nav {
 .navbar_logo-container .desktop_flags img {
   height: 2.18rem;
   width: 2.18rem;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  filter: grayscale(70%);
   cursor: pointer;
   transition: 0.4s;
 }
 .navbar_logo-container .desktop_flags img:hover {
-  filter: grayscale(0);
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .navbar_list-container {
@@ -110,6 +108,7 @@ header nav {
 .hamburger_menu {
   color: #f5f5f5;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -149,6 +148,7 @@ header nav {
   }
   .mobile_flags {
     display: flex;
+    cursor: pointer;
   }
 }
 @media (max-width: 650px) {
@@ -927,4 +927,88 @@ header nav {
   .form_container div:nth-child(3) label {
     left: 1.25rem !important;
   }
+}
+.certificate_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 3.12rem;
+  margin-bottom: 1.25rem;
+}
+.certificate_container .certificate__item {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  font-size: 0.9rem;
+  transition: all 0.7s;
+}
+.certificate_container .certificate__item:hover {
+  transform: translateY(12px);
+  transition: all 0.7s;
+}
+.certificate_container .certificate__item:hover .certificate__description {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(-300px);
+}
+.certificate_container .certificate__item:hover .certificate__img {
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
+.certificate_container .certificate__item .certificate__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: all 1s;
+}
+.certificate_container .certificate__item .certificate__description {
+  padding: 50px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 18.75rem;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.certificate_container .certificate__item .certificate__description .certificate__description-title {
+  color: #4cb1f6;
+  font-family: "Secular One", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.certificate_container .certificate__item .certificate__description .certificate__description-text {
+  margin: 1.25rem 0;
+  color: #f5f5f5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.certificate_container .certificate__item .buttons__container {
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+}
+.certificate_container .certificate__item .buttons__container .button {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background: #191919;
+  color: #f5f5f5;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+}
+.certificate_container .certificate__item .buttons__container .button:hover {
+  color: #4cb1f6;
+}
+.certificate_container .certificate__item .buttons__container .button span {
+  margin-left: 4px;
 }/*# sourceMappingURL=styles.css.map */

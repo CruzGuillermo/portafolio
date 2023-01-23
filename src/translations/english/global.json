@@ -4,7 +4,11 @@
         "about": "About",
         "portfolio": "Portfolio",
         "services": "Services",
-        "contact": "Contact"
+        "contact": "Contact",
+        "certificate": "Certificate"
+    },
+    "certificate": {
+        "certificate": "Certificate"
     },
     "banner": {
         "greeting": "Hi !",

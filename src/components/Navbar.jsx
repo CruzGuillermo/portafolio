@@ -32,11 +32,6 @@ const Navbar = () => {
                     <div className="navbar_logo-container">
                         <div className="logo_container">
                             <a href="#navbar">
-                                {/* <picture>
-                                    <source media="(max-width:400px)" srcSet={logoSmall}/>
-                                    <source media="(max-width:650px)" srcSet={show ? logoMobile2 : logoMobile}/>
-                                    <img src={show ? logo2 : logo} className="navbar_logo" alt="Logo Franco Buceta"></img>
-                                </picture> */}
                             </a>
                         </div>
 
@@ -82,6 +77,7 @@ const Navbar = () => {
                                     <img src={spain} alt="Bandera de España" onClick={() => i18n.changeLanguage("es")} />
                                     <img src={usa} alt="Bandera de Estados Unidos" onClick={() => i18n.changeLanguage("en")} />
                                 </div>
+                            
                             </li>
                         </ul>
                     </div>

@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import ScrollReveal from 'scrollreveal';
 import ecommerce from "../assets/Pf-HenryMusic.jpeg";
 import piDogs from "../assets/Pi-Dogs.jpeg";
-// import prodeconsa from "../assets/proyecto-prodeconsa.jpeg";
+import portafolio from "../assets/portafolio.jpeg";
 
 const Portfolio = () => {
 
@@ -44,7 +44,7 @@ const Portfolio = () => {
                             <div className="portfolio__description">
                                 <h3 className="portfolio__description-title">E-Commerce - Henry Music</h3>
                                 <p className="portfolio__description-text">
-                                    React, Redux, Node, Express, Sequelize, PostgreSQL, Css, Bootstrap, Tailwind, Mercado Pago
+                                    React, Redux, Node, Express, Sequelize, PostgreSQL, Css, Bootstrap, Tailwind
                                 </p>
                                 <div className="buttons__container">
                                     <a className="button" href="https://henry-instruments-one.vercel.app/" aria-label="Sitio 1" target="_blank">
@@ -70,10 +70,6 @@ const Portfolio = () => {
                                     React, Redux, Node, Express, Sequelize, PostgreSQL, Css puro
                                 </p>
                                 <div className="buttons__container">
-                                    {/* <a className="button" href="https://asteroids-atari.netlify.app/" aria-label="Sitio 2" target="_blank">
-                                        <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>{t("portfolio.website")}</span>
-                                    </a> */}
                                     <a className="button" href="https://github.com/CruzGuillermo/Pi-Dogs-Henry" aria-label="Repo 2" target="_blank">
                                         <FontAwesomeIcon icon={faGithub} />
                                         <span>{t("portfolio.repository")}</span>
@@ -82,28 +78,24 @@ const Portfolio = () => {
                             </div>
                     </div>
 
-                    {/* <div className="portfolio__item">
+                    <div className="portfolio__item">
                         <picture>
-                            <source type="image/jpeg" srcSet={prodeconsa}></source>
+                            <source type="image/jpeg" srcSet={portafolio}></source>
                             <img className="portfolio__img" alt="Portfolio item - Landing Page"></img>
                         </picture>
                             <div className="portfolio__description">
-                                <h3 className="portfolio__description-title">A&M Prodeconsa</h3>
+                                <h3 className="portfolio__description-title">Portfolio </h3>
                                 <p className="portfolio__description-text">
-                                    Landing Page: HTML5, CSS3, JavaScript
+                                  vite, react, react-i18next, react-scroll, scrollreveal, fontawesome, tailwindcss
                                 </p>
                                 <div className="buttons__container">
-                                    <a className="button" href="https://amprodeconsa.com/index.html" aria-label="Sitio 3" target="_blank">
-                                        <FontAwesomeIcon icon={faEarthAmerica} />
-                                        <span>{t("portfolio.website")}</span>
-                                    </a>
-                                    <a className="button" href="https://github.com/francobuceta/Prodeconsa-SA" aria-label="Repo 3" target="_blank">
+                                    <a className="button" href="https://github.com/CruzGuillermo/portafolio" aria-label="Repo 3" target="_blank">
                                         <FontAwesomeIcon icon={faGithub} />
                                         <span>{t("portfolio.repository")}</span>
                                     </a>
                                 </div>
                             </div>
-                    </div> */}
+                    </div>
                 </div>
 
                 

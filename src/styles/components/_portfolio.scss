@@ -2,7 +2,7 @@
 
 .portfolio_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.25rem;
     margin-top: 3.12rem;
     margin-bottom: 1.25rem;
@@ -100,7 +100,7 @@
 
 @media (max-width: 1200px) {
     .portfolio_container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
