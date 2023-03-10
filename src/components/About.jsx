@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faHtml5, faCss3Alt, faJs, faSass, faBootstrap, faReact, faGitAlt, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
-import pdf from "../assets/CruzGuillermoCv.pdf";
+import pdf from "../assets/GuillermoCruzCv.pdf";
 import ScrollReveal from 'scrollreveal';
 import bootstrap from "../assets/icon/bootstrap.png";
 import css from "../assets/icon/css3.png";
